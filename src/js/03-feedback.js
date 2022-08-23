@@ -32,7 +32,6 @@ function getFormInputData(event) {
 function dataInput() {
   const formData = new FormData(form);
   const values = Object.fromEntries(formData);
-  console.log(values);
   localStorage.setItem(STORAGE_KEY, JSON.stringify(values));
 }
 
